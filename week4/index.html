@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Josef Albers Interaction of Color</title>
+<style>
+body {
+	margin: 0;
+}
+.artboard {
+	width: 100%;
+	height: 100%;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.container {
+	width: 660px;
+	height: 200px;
+	background-color: #f9ffef;
+	margin-top: 40px;
+}
+
+.container1-1 {
+	width: 120px;
+	height: 120px;
+	background-color: #e91c1c;
+	position: relative;
+	left: 30px;
+	top: 50px;
+}
+
+.container1-2 {
+	width: 70px;
+	height: 70px;
+	background-color: #cf0c14;
+	position: relative;
+	top: 40px;
+	left: 25px;
+
+}
+
+@keyframes bounce2{
+		20%{
+			transform: translate(-25px, 0px);
+		}
+		40%{
+			transform: translate(-25px, -40px);
+		}
+		60%{
+			transform: translate(25px, -40px);
+		}
+		80%{
+			transform: translate(25px, 0px);
+		}
+		100%{
+			transition: initial;
+		}
+	}
+
+.animation2 {
+	animation: bounce2 0.5s infinite linear;
+}
+
+.container1-3 {
+	width: 50px;
+	height: 50px;
+	background-color: #b10a11;
+	position: relative;
+	top: 15px;
+	left: 9px;
+}
+
+@keyframes bounce1{
+		20%{
+			transform: translate(-9px, 0px);
+		}
+		40%{
+			transform: translate(-9px, -15px);
+		}
+		60%{
+			transform: translate(11px, -15px);
+		}
+		80%{
+			transform: translate(11px, 0px);
+		}
+		100%{
+			transition: initial;
+		}
+	}
+
+.animation1 {
+	animation: bounce1 2s infinite linear;
+}
+
+.container2-1 {
+	width: 120px;
+	height: 120px;
+	background-color: #b10a11;
+	position: relative;
+	top: -70px;
+	left: 190px;
+}
+
+.container2-2 {
+	width: 70px;
+	height: 70px;
+	background-color: #cf0c14;
+	position: relative;
+	top: 40px;
+	left: 25px;
+}
+
+@keyframes bounce4{
+		20%{
+			transform: translate(0px, -40px);
+		}
+		40%{
+			transform: translate(25px, -40px);
+		}
+		60%{
+			transform: translate(25px, 10px);
+		}
+		80%{
+			transform: translate(0px, 10px);
+		}
+		100%{
+			transition: initial;
+		}
+	}
+
+.animation4 {
+	animation: bounce4 0.5s infinite linear;
+}
+
+.container2-3 {
+	width: 50px;
+	height: 50px;
+	background-color: #e91c1c;
+	position: relative;
+	top: 15px;
+	left: 9.5px;
+}
+
+@keyframes bounce3{
+		20%{
+			transform: translate(0px, -15px);
+		}
+		40%{
+			transform: translate(10px, -15px);
+		}
+		60%{
+			transform: translate(10px, 5px);
+		}
+		80%{
+			transform: translate(0px, 5px);
+		}
+		100%{
+			transition: initial;
+		}
+	}
+
+.animation3 {
+	animation: bounce3 2s infinite linear;
+}
+
+.container3-1 {
+	width: 120px;
+	height: 120px;
+	background-color: #b10a11;
+	position: relative;
+	left: 350px;
+	top: -190px;
+}
+
+.container3-2 {
+	width: 95px;
+	height: 95px;
+	background-color: #cf0c14;
+	position: relative;
+	top: 20px;
+	left: 12.5px;
+}
+
+@keyframes bounce6{
+		20%{
+			transform: translate(0px, 5px);
+		}
+		40%{
+			transform: translate(12px, 5px);
+		}
+		60%{
+			transform: translate(12px, -20px);
+		}
+		80%{
+			transform: translate(0px, -20px);
+		}
+		100%{
+			transition: initial;
+		}
+	}
+
+.animation6 {
+	animation: bounce6 0.5s infinite linear;
+}
+
+.container3-3 {
+	width: 50px;
+	height: 50px;
+	background-color: #e91c1c;
+	position: relative;
+	top: 35px;
+	left: 23px;
+}
+
+@keyframes bounce5{
+		20%{
+			transform: translate(0px, 10px);
+		}
+		40%{
+			transform: translate(22px, 10px);
+		}
+		60%{
+			transform: translate(22px, -35px);
+		}
+		80%{
+			transform: translate(0px, -35px);
+		}
+		100%{
+			transition: initial;
+		}
+	}
+
+.animation5 {
+	animation: bounce5 2s infinite linear;
+}
+
+.container4-1 {
+	width: 120px;
+	height: 120px;
+	background-color: #e91c1c;
+	position: relative;
+	left: 510px;
+	top: -310px;
+}
+
+.container4-2 {
+	width: 95px;
+	height: 95px;
+	background-color: #cf0c14;
+	position: relative;
+	top: 20px;
+	left: 12.5px;
+}
+
+@keyframes bounce8{
+		20%{
+			transform: translate(12px, 0px);
+		}
+		40%{
+			transform: translate(12px, -20px);
+		}
+		60%{
+			transform: translate(-12px, -20px);
+		}
+		80%{
+			transform: translate(-12px, 0px);
+		}
+		100%{
+			transition: initial;
+		}
+	}
+
+.animation8 {
+	animation: bounce8 0.5s infinite linear;
+}
+
+.container4-3 {
+	width: 50px;
+	height: 50px;
+	background-color: #b10a11;
+	position: relative;
+	top: 35px;
+	left: 23px;
+}
+
+@keyframes bounce7{
+		20%{
+			transform: translate(22px, 0px);
+		}
+		40%{
+			transform: translate(22px, -35px);
+		}
+		60%{
+			transform: translate(-22.5px, -35px);
+		}
+		80%{
+			transform: translate(-22.5px, 0px);
+		}
+		100%{
+			transition: initial;
+		}
+	}
+
+.animation7 {
+	animation: bounce7 2s infinite linear;
+}
+</style>
+</head>
+<body>
+	<div class="artboard">
+		<div class="container">
+			<div class="container1-1">
+				<div class="container1-2 animation2">
+					<div class="container1-3 animation1">
+					</div>
+				</div>
+			</div>
+			<div class="container2-1">
+				<div class="container2-2 animation4">
+					<div class="container2-3 animation3">
+					</div>
+				</div>
+			</div>
+			<div class="container3-1">
+				<div class="container3-2 animation6">
+					<div class="container3-3 animation5">
+					</div>
+				</div>
+			</div>
+			<div class="container4-1">
+				<div class="container4-2 animation8">
+					<div class="container4-3 animation7">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
