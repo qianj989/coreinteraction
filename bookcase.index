@@ -1,0 +1,101 @@
+<bookcase>
+	<shelf class=“floor1”>
+		<book class=“fiction” id=“The Association of Small Bombs"></book>
+		<book class=“fiction” id=“The North Water”></book>
+		<book class=“nonfiction” id=“In the Darkroom”></book>
+		<cd id=“popmusic”></cd>
+		<cd id=“rapmusic”></cd>
+	</shelf>
+	<shelf class=“floor2”>
+		<book class=“fiction” id=“The Underground Railroad"></book>
+		<book class=“fiction” id=“The Vegetarian”></book>
+		<book class=“nonfiction” id=“The Return: Fathers, Sons, and the Land in Between”></book>
+	</shelf>
+	<shelf class=“floor3”>
+		<book class=“fiction” id=“War and Turpentine"></book>
+		<book class=“nonfiction” id=“At the Existentialist Cafe: Freedom, Being, and Apricot Cocktails”></book>
+		<folder class=“personal” id=“school work”></folder>
+		<folder class=“personal” id=“company work”></folder>
+		<folder class=“personal” id=“high school”></folder>
+		<folder class=“personal” id=“college”></folder>
+		<cd id=“bluemusic”></cd>
+	</shelf>
+	<shelf class=“floor4”>
+		<book class=“nonfiction” id=“Dark Money: The Hidden History of the Billionaires Behind the Rise of the Radical Right”></book>
+		<book class=“nonfiction” id=“Evicted: Poverty and Profit in the American City”></book>
+		<pile id=“random paperwork”></pile>
+	</shelf>
+</bookcase>
+
+bookcase {
+	width: 4m;
+	height: 3m;
+	depth: 0.5m;
+	color: black;
+	material: cherrywood;
+	type: aged solid heavy;
+}
+
+shelf {
+	thickness: 0.05m;
+	width: 4m;
+	depth: 0.5m;
+	material: cherrywood;
+	type: aged solid heavy;
+}
+
+.floor1, floor2, floor3 {
+	float: right;
+}
+
+.floor4 {
+	float: left;
+}
+
+.fiction {
+	bookcover: hard;
+	display: inline;
+	font-style: Time;
+}
+
+.nonfiction {
+	bookcover: paper;
+	display: inline;
+	font-style: serif
+}
+
+.personal {
+	display: hide;
+	language: Chinese;
+	type: the thing I might throw away anytime;
+}
+
+pile {
+	display: clean organized;
+	type: the thing my mom might throw away anytime;
+}
+
+#The Vegetarian {
+	from: a gift from my friend;
+	rate: I never read;
+	language: English;
+}
+
+#The Return: Fathers, Sons, and the Land in Between {
+	from: my father give to me;
+	rate: 4-stars;
+	language: English;
+}
+
+shelf > #nonfiction {
+	from: I didn’t buy it;
+	type: dusted;
+}
+shelf .cd {
+	type: placed long time ago;
+	thickness: 1.5cm;
+	width: 10cm;
+	height: 10cm;
+	material: plastic;
+	rate: 5-stars;
+}
