@@ -1,0 +1,32 @@
+<html>
+<head>	
+</head>
+<body>
+<span id="image"></span>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+	var url = "https://raw.githubusercontent.com/robbykraft/Interaction/master/mystery.json"
+	$.getJSON(url,function(dataSet) {
+	var data = dataSet["pixels"];
+	for(var i = 0; i < data.length; i++){
+		for (var j= 0; j < data[i].length; j++){
+			var value = data[i][j];
+			if(value == 0) {
+				 $("#image").append($('<span>').css('color', 'white').text(value));
+			}
+			else if (value == 1){
+             $("#image").append($('<span>').css('color', 'red').text(value))
+			}
+			else if (value == 2) {
+			 $("#image").append($('<span>').css('color', 'yellow').text(value))
+			}
+			else if (value == 3) {
+				 $("#image").append($('<span>').css('color', 'black').text(value))
+			}
+		}
+$("#image").append("<br>");
+	}
+ });
+</script>
+</body>
+</html>
